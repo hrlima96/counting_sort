@@ -4,12 +4,14 @@ def quick_sort(lista):
     
     pivo = lista[0]
     
-    maior, menor = [], []
+    maior, menor, igual = [], [], []
     
     for num in lista:
-        if num >= pivo:
+        if num > pivo:
             maior.append(num)
-        else:
+        elif num < pivo:
             menor.append(num)
+        else:
+            igual.append(num)
             
-    return quick_sort(menor) + quick_sort(maior)
+    return quick_sort(menor) + igual + quick_sort(maior)
