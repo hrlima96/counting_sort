@@ -1,3 +1,2 @@
-# counting_sort
-Ordenation Algorithm 
+Ordenation Algorithms 
 
